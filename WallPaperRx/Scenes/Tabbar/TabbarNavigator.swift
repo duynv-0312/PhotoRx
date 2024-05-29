@@ -17,8 +17,11 @@ struct TabbarNavigator: TabbarNavigatorType {
     
     func createTabbarControllers() -> [UIViewController] {
         let photoVC = makePhoto()
+        let videoVC = makeVideo()
+        let searchVC = makeSearch()
+        let personalVC = makePersonal()
         
-        return [photoVC]
+        return [photoVC, videoVC, searchVC, personalVC]
     }
     
     private func makePhoto() -> UINavigationController {
@@ -30,6 +33,42 @@ struct TabbarNavigator: TabbarNavigatorType {
         photoVC.bindViewModel(to: photoVM)
         photoVC.tabBarItem = TabbarItemType.photo.item
         navVC.viewControllers = [photoVC]
+        return navVC
+    }
+    
+    private func makeVideo() -> UINavigationController {
+        let navVC = BaseNavigationController()
+        let videoUseCase = VideoUseCase()
+        let videoNavigator = VideoNavigator(navigationController: navVC)
+        let videoVM = VideoViewModel(useCase: videoUseCase, navigator: videoNavigator)
+        let videoVC = VideoViewController()
+        videoVC.bindViewModel(to: videoVM)
+        videoVC.tabBarItem = TabbarItemType.video.item
+        navVC.viewControllers = [videoVC]
+        return navVC
+    }
+    
+    private func makeSearch() -> UINavigationController {
+        let navVC = BaseNavigationController()
+        let searchUseCase = SearchUseCase()
+        let searchNavigator = SearchNavigator(navigationController: navVC)
+        let searchVM = SearchViewModel(useCase: searchUseCase, navigator: searchNavigator)
+        let searchVC = SearchViewController()
+        searchVC.bindViewModel(to: searchVM)
+        searchVC.tabBarItem = TabbarItemType.search.item
+        navVC.viewControllers = [searchVC]
+        return navVC
+    }
+    
+    private func makePersonal() -> UINavigationController {
+        let navVC = BaseNavigationController()
+        let personalUseCase = PersonalUseCase()
+        let personalNavigator = PersonalNavigator(navigationController: navVC)
+        let personalVM = PersonalViewModel(useCase: personalUseCase, navigator: personalNavigator)
+        let personalVC = PersonalViewController()
+        personalVC.bindViewModel(to: personalVM)
+        personalVC.tabBarItem = TabbarItemType.personal.item
+        navVC.viewControllers = [personalVC]
         return navVC
     }
 }

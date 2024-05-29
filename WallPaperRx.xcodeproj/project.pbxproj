@@ -31,6 +31,26 @@
 		04D1B0A12C0716F900AE51ED /* ErrorTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0A02C0716F900AE51ED /* ErrorTracker.swift */; };
 		04D1B0A32C07170300AE51ED /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0A22C07170300AE51ED /* ActivityIndicator.swift */; };
 		04D1B0A52C0720D100AE51ED /* TabbarItemType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0A42C0720D100AE51ED /* TabbarItemType.swift */; };
+		04D1B0A92C0724A000AE51ED /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0A72C0724A000AE51ED /* VideoViewController.swift */; };
+		04D1B0AA2C0724A000AE51ED /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D1B0A82C0724A000AE51ED /* VideoViewController.xib */; };
+		04D1B0AD2C0724AC00AE51ED /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0AB2C0724AC00AE51ED /* SearchViewController.swift */; };
+		04D1B0AE2C0724AC00AE51ED /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D1B0AC2C0724AC00AE51ED /* SearchViewController.xib */; };
+		04D1B0B52C0724C600AE51ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0B32C0724C600AE51ED /* DetailViewController.swift */; };
+		04D1B0B62C0724C600AE51ED /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D1B0B42C0724C600AE51ED /* DetailViewController.xib */; };
+		04D1B0B82C0724D900AE51ED /* VideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0B72C0724D900AE51ED /* VideoViewModel.swift */; };
+		04D1B0BA2C0724E400AE51ED /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0B92C0724E400AE51ED /* SearchViewModel.swift */; };
+		04D1B0BE2C0724FD00AE51ED /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0BD2C0724FD00AE51ED /* DetailViewModel.swift */; };
+		04D1B0C02C07250700AE51ED /* VideoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0BF2C07250700AE51ED /* VideoUseCase.swift */; };
+		04D1B0C22C07251400AE51ED /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0C12C07251400AE51ED /* SearchUseCase.swift */; };
+		04D1B0C62C07253000AE51ED /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0C52C07253000AE51ED /* DetailUseCase.swift */; };
+		04D1B0C82C07253D00AE51ED /* VideoNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0C72C07253D00AE51ED /* VideoNavigator.swift */; };
+		04D1B0CA2C07254600AE51ED /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0C92C07254600AE51ED /* SearchNavigator.swift */; };
+		04D1B0CE2C07256800AE51ED /* DetailNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0CD2C07256800AE51ED /* DetailNavigator.swift */; };
+		04D1B0D12C0729A000AE51ED /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0CF2C0729A000AE51ED /* PersonalViewController.swift */; };
+		04D1B0D22C0729A000AE51ED /* PersonalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04D1B0D02C0729A000AE51ED /* PersonalViewController.xib */; };
+		04D1B0D42C0729AB00AE51ED /* PersonalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0D32C0729AB00AE51ED /* PersonalViewModel.swift */; };
+		04D1B0D62C0729B500AE51ED /* PersonalUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0D52C0729B500AE51ED /* PersonalUseCase.swift */; };
+		04D1B0D82C0729BE00AE51ED /* PersonalNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0D72C0729BE00AE51ED /* PersonalNavigator.swift */; };
 		9F921CD8A0A31BC2273950B6 /* Pods_WallPaperRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9B6D11F561727DB988FF7 /* Pods_WallPaperRx.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +81,26 @@
 		04D1B0A02C0716F900AE51ED /* ErrorTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorTracker.swift; sourceTree = "<group>"; };
 		04D1B0A22C07170300AE51ED /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		04D1B0A42C0720D100AE51ED /* TabbarItemType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarItemType.swift; sourceTree = "<group>"; };
+		04D1B0A72C0724A000AE51ED /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		04D1B0A82C0724A000AE51ED /* VideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
+		04D1B0AB2C0724AC00AE51ED /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		04D1B0AC2C0724AC00AE51ED /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		04D1B0B32C0724C600AE51ED /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04D1B0B42C0724C600AE51ED /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		04D1B0B72C0724D900AE51ED /* VideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewModel.swift; sourceTree = "<group>"; };
+		04D1B0B92C0724E400AE51ED /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		04D1B0BD2C0724FD00AE51ED /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		04D1B0BF2C07250700AE51ED /* VideoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoUseCase.swift; sourceTree = "<group>"; };
+		04D1B0C12C07251400AE51ED /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		04D1B0C52C07253000AE51ED /* DetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUseCase.swift; sourceTree = "<group>"; };
+		04D1B0C72C07253D00AE51ED /* VideoNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoNavigator.swift; sourceTree = "<group>"; };
+		04D1B0C92C07254600AE51ED /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
+		04D1B0CD2C07256800AE51ED /* DetailNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigator.swift; sourceTree = "<group>"; };
+		04D1B0CF2C0729A000AE51ED /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		04D1B0D02C0729A000AE51ED /* PersonalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalViewController.xib; sourceTree = "<group>"; };
+		04D1B0D32C0729AB00AE51ED /* PersonalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewModel.swift; sourceTree = "<group>"; };
+		04D1B0D52C0729B500AE51ED /* PersonalUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalUseCase.swift; sourceTree = "<group>"; };
+		04D1B0D72C0729BE00AE51ED /* PersonalNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalNavigator.swift; sourceTree = "<group>"; };
 		216425704651BC3392227E98 /* Pods-WallPaperRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperRx.debug.xcconfig"; path = "Target Support Files/Pods-WallPaperRx/Pods-WallPaperRx.debug.xcconfig"; sourceTree = "<group>"; };
 		36A9B6D11F561727DB988FF7 /* Pods_WallPaperRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D9BCAF0837F61FBA6FEDE7 /* Pods-WallPaperRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperRx.release.xcconfig"; path = "Target Support Files/Pods-WallPaperRx/Pods-WallPaperRx.release.xcconfig"; sourceTree = "<group>"; };
@@ -173,6 +213,7 @@
 				04D1B0742C07133C00AE51ED /* Video */,
 				04D1B0752C07135300AE51ED /* Search */,
 				04D1B0762C07136200AE51ED /* Personal */,
+				04D1B0A62C07248500AE51ED /* Detail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -200,6 +241,11 @@
 		04D1B0742C07133C00AE51ED /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				04D1B0A72C0724A000AE51ED /* VideoViewController.swift */,
+				04D1B0A82C0724A000AE51ED /* VideoViewController.xib */,
+				04D1B0B72C0724D900AE51ED /* VideoViewModel.swift */,
+				04D1B0BF2C07250700AE51ED /* VideoUseCase.swift */,
+				04D1B0C72C07253D00AE51ED /* VideoNavigator.swift */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -207,6 +253,11 @@
 		04D1B0752C07135300AE51ED /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				04D1B0AB2C0724AC00AE51ED /* SearchViewController.swift */,
+				04D1B0AC2C0724AC00AE51ED /* SearchViewController.xib */,
+				04D1B0B92C0724E400AE51ED /* SearchViewModel.swift */,
+				04D1B0C12C07251400AE51ED /* SearchUseCase.swift */,
+				04D1B0C92C07254600AE51ED /* SearchNavigator.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -214,6 +265,11 @@
 		04D1B0762C07136200AE51ED /* Personal */ = {
 			isa = PBXGroup;
 			children = (
+				04D1B0CF2C0729A000AE51ED /* PersonalViewController.swift */,
+				04D1B0D02C0729A000AE51ED /* PersonalViewController.xib */,
+				04D1B0D32C0729AB00AE51ED /* PersonalViewModel.swift */,
+				04D1B0D52C0729B500AE51ED /* PersonalUseCase.swift */,
+				04D1B0D72C0729BE00AE51ED /* PersonalNavigator.swift */,
 			);
 			path = Personal;
 			sourceTree = "<group>";
@@ -278,6 +334,18 @@
 				04D1B09A2C07154D00AE51ED /* BaseViewController.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		04D1B0A62C07248500AE51ED /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				04D1B0B32C0724C600AE51ED /* DetailViewController.swift */,
+				04D1B0B42C0724C600AE51ED /* DetailViewController.xib */,
+				04D1B0BD2C0724FD00AE51ED /* DetailViewModel.swift */,
+				04D1B0C52C07253000AE51ED /* DetailUseCase.swift */,
+				04D1B0CD2C07256800AE51ED /* DetailNavigator.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		3EC65D7008098B29301FAC01 /* Frameworks */ = {
@@ -358,8 +426,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				04D1B07A2C07137E00AE51ED /* PhotoViewController.xib in Resources */,
+				04D1B0B62C0724C600AE51ED /* DetailViewController.xib in Resources */,
 				04D1B0632C07122100AE51ED /* LaunchScreen.storyboard in Resources */,
+				04D1B0AA2C0724A000AE51ED /* VideoViewController.xib in Resources */,
+				04D1B0AE2C0724AC00AE51ED /* SearchViewController.xib in Resources */,
 				04D1B0602C07122100AE51ED /* Assets.xcassets in Resources */,
+				04D1B0D22C0729A000AE51ED /* PersonalViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,23 +486,39 @@
 			files = (
 				04D1B07E2C07139500AE51ED /* PhotoUseCase.swift in Sources */,
 				04D1B0952C07150700AE51ED /* TabbarUseCase.swift in Sources */,
+				04D1B0D12C0729A000AE51ED /* PersonalViewController.swift in Sources */,
+				04D1B0BE2C0724FD00AE51ED /* DetailViewModel.swift in Sources */,
+				04D1B0D82C0729BE00AE51ED /* PersonalNavigator.swift in Sources */,
+				04D1B0B52C0724C600AE51ED /* DetailViewController.swift in Sources */,
 				04D1B0542C07121F00AE51ED /* AppDelegate.swift in Sources */,
 				04D1B0912C0714E500AE51ED /* TabbarViewController.swift in Sources */,
+				04D1B0D42C0729AB00AE51ED /* PersonalViewModel.swift in Sources */,
 				04D1B0A52C0720D100AE51ED /* TabbarItemType.swift in Sources */,
 				04D1B0892C0714AD00AE51ED /* AppViewModel.swift in Sources */,
+				04D1B0C82C07253D00AE51ED /* VideoNavigator.swift in Sources */,
+				04D1B0A92C0724A000AE51ED /* VideoViewController.swift in Sources */,
 				04D1B0972C07151000AE51ED /* TabbarNavigator.swift in Sources */,
 				04D1B09D2C0716E500AE51ED /* Bindable.swift in Sources */,
+				04D1B0C02C07250700AE51ED /* VideoUseCase.swift in Sources */,
 				04D1B0932C0714FA00AE51ED /* TabbarViewModel.swift in Sources */,
+				04D1B0C62C07253000AE51ED /* DetailUseCase.swift in Sources */,
 				04D1B09F2C0716EF00AE51ED /* ViewModelType.swift in Sources */,
+				04D1B0C22C07251400AE51ED /* SearchUseCase.swift in Sources */,
 				04D1B08F2C0714D000AE51ED /* AppNavigator.swift in Sources */,
+				04D1B0CE2C07256800AE51ED /* DetailNavigator.swift in Sources */,
+				04D1B0CA2C07254600AE51ED /* SearchNavigator.swift in Sources */,
 				04D1B0992C07153C00AE51ED /* BaseNavigationController.swift in Sources */,
+				04D1B0AD2C0724AC00AE51ED /* SearchViewController.swift in Sources */,
 				04D1B0792C07137E00AE51ED /* PhotoViewController.swift in Sources */,
 				04D1B05E2C07121F00AE51ED /* WallPaperRx.xcdatamodeld in Sources */,
 				04D1B0562C07121F00AE51ED /* SceneDelegate.swift in Sources */,
 				04D1B0A12C0716F900AE51ED /* ErrorTracker.swift in Sources */,
 				04D1B08D2C0714C700AE51ED /* AppUseCase.swift in Sources */,
+				04D1B0D62C0729B500AE51ED /* PersonalUseCase.swift in Sources */,
+				04D1B0B82C0724D900AE51ED /* VideoViewModel.swift in Sources */,
 				04D1B0A32C07170300AE51ED /* ActivityIndicator.swift in Sources */,
 				04D1B09B2C07154D00AE51ED /* BaseViewController.swift in Sources */,
+				04D1B0BA2C0724E400AE51ED /* SearchViewModel.swift in Sources */,
 				04D1B07C2C07138900AE51ED /* PhotoViewModel.swift in Sources */,
 				04D1B0802C0713AF00AE51ED /* PhotoNavigator.swift in Sources */,
 			);
