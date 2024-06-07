@@ -26,7 +26,7 @@ struct TabbarNavigator: TabbarNavigatorType {
     
     private func makePhoto() -> UINavigationController {
         let navVC = BaseNavigationController()
-        let photoUseCase = PhotoUseCase()
+        let photoUseCase = PhotoUseCase(photoRepository: PhototRepository())
         let photoNavigator = PhotoNavigator(navigationController: navVC)
         let photoVM = PhotoViewModel(useCase: photoUseCase, navigator: photoNavigator)
         let photoVC = PhotoViewController()
