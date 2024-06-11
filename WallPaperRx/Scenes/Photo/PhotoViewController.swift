@@ -35,11 +35,14 @@ final class PhotoViewController: UIViewController, Bindable, NibReusable {
             loadTrigger: Driver.just(()),
             selectedTrigger: tableView.rx.itemSelected.asDriver()
         )
-
+        
         let output = viewModel.transform(input,
                                          disposeBag: disposeBag)
-
+        
         output.photos
+            .do(onNext: { photos in
+                print("Photos to be displayed: \(photos.count) items")
+            })
             .drive(tableView.rx.items) { tableView, index, photo in
                 let indexPath = IndexPath(item: index, section: 0)
                 let cell: ImageCell = tableView.dequeueReusableCell(for: indexPath)

@@ -69,6 +69,13 @@
 		04D1B0FC2C07564500AE51ED /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0FB2C07564500AE51ED /* Video.swift */; };
 		04D1B0FE2C07564D00AE51ED /* Videos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D1B0FD2C07564D00AE51ED /* Videos.swift */; };
 		9F921CD8A0A31BC2273950B6 /* Pods_WallPaperRx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A9B6D11F561727DB988FF7 /* Pods_WallPaperRx.framework */; };
+		C9D179C92C12C0D7009C24AF /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D179C82C12C0D7009C24AF /* UIView+Extension.swift */; };
+		C9D179CD2C12C766009C24AF /* VideoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D179CC2C12C766009C24AF /* VideoCell.xib */; };
+		C9D179CE2C12C766009C24AF /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D179CB2C12C766009C24AF /* VideoCell.swift */; };
+		C9D179D22C12DB69009C24AF /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D179D12C12DB69009C24AF /* PhotoCell.xib */; };
+		C9D179D32C12DB69009C24AF /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D179D02C12DB69009C24AF /* PhotoCell.swift */; };
+		C9D179D72C12E8C3009C24AF /* PopupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9D179D62C12E8C3009C24AF /* PopupViewController.xib */; };
+		C9D179D82C12E8C3009C24AF /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9D179D52C12E8C3009C24AF /* PopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -138,6 +145,13 @@
 		216425704651BC3392227E98 /* Pods-WallPaperRx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperRx.debug.xcconfig"; path = "Target Support Files/Pods-WallPaperRx/Pods-WallPaperRx.debug.xcconfig"; sourceTree = "<group>"; };
 		36A9B6D11F561727DB988FF7 /* Pods_WallPaperRx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WallPaperRx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D9BCAF0837F61FBA6FEDE7 /* Pods-WallPaperRx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WallPaperRx.release.xcconfig"; path = "Target Support Files/Pods-WallPaperRx/Pods-WallPaperRx.release.xcconfig"; sourceTree = "<group>"; };
+		C9D179C82C12C0D7009C24AF /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C9D179CB2C12C766009C24AF /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		C9D179CC2C12C766009C24AF /* VideoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoCell.xib; sourceTree = "<group>"; };
+		C9D179D02C12DB69009C24AF /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		C9D179D12C12DB69009C24AF /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		C9D179D52C12E8C3009C24AF /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		C9D179D62C12E8C3009C24AF /* PopupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopupViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +207,7 @@
 			children = (
 				04D1B0EC2C07455600AE51ED /* Response+Extension.swift */,
 				04D1B0EE2C0747B000AE51ED /* ObservableType+Extension.swift */,
+				C9D179C82C12C0D7009C24AF /* UIView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,6 +294,7 @@
 		04D1B0742C07133C00AE51ED /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				C9D179CA2C12C752009C24AF /* Cell */,
 				04D1B0A72C0724A000AE51ED /* VideoViewController.swift */,
 				04D1B0A82C0724A000AE51ED /* VideoViewController.xib */,
 				04D1B0B72C0724D900AE51ED /* VideoViewModel.swift */,
@@ -291,6 +307,7 @@
 		04D1B0752C07135300AE51ED /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				C9D179CF2C12DB59009C24AF /* Cell */,
 				04D1B0AB2C0724AC00AE51ED /* SearchViewController.swift */,
 				04D1B0AC2C0724AC00AE51ED /* SearchViewController.xib */,
 				04D1B0B92C0724E400AE51ED /* SearchViewModel.swift */,
@@ -380,6 +397,7 @@
 		04D1B0872C07149400AE51ED /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				C9D179D42C12E8AC009C24AF /* Popup */,
 				04D1B0982C07153C00AE51ED /* BaseNavigationController.swift */,
 				04D1B09A2C07154D00AE51ED /* BaseViewController.swift */,
 			);
@@ -430,6 +448,33 @@
 				C6D9BCAF0837F61FBA6FEDE7 /* Pods-WallPaperRx.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9D179CA2C12C752009C24AF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9D179CB2C12C766009C24AF /* VideoCell.swift */,
+				C9D179CC2C12C766009C24AF /* VideoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9D179CF2C12DB59009C24AF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C9D179D02C12DB69009C24AF /* PhotoCell.swift */,
+				C9D179D12C12DB69009C24AF /* PhotoCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		C9D179D42C12E8AC009C24AF /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				C9D179D52C12E8C3009C24AF /* PopupViewController.swift */,
+				C9D179D62C12E8C3009C24AF /* PopupViewController.xib */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -494,7 +539,10 @@
 			files = (
 				04D1B07A2C07137E00AE51ED /* PhotoViewController.xib in Resources */,
 				04D1B0F42C07481200AE51ED /* ImageCell.xib in Resources */,
+				C9D179D72C12E8C3009C24AF /* PopupViewController.xib in Resources */,
 				04D1B0B62C0724C600AE51ED /* DetailViewController.xib in Resources */,
+				C9D179CD2C12C766009C24AF /* VideoCell.xib in Resources */,
+				C9D179D22C12DB69009C24AF /* PhotoCell.xib in Resources */,
 				04D1B0632C07122100AE51ED /* LaunchScreen.storyboard in Resources */,
 				04D1B0AA2C0724A000AE51ED /* VideoViewController.xib in Resources */,
 				04D1B0AE2C0724AC00AE51ED /* SearchViewController.xib in Resources */,
@@ -564,6 +612,7 @@
 				04D1B0542C07121F00AE51ED /* AppDelegate.swift in Sources */,
 				04D1B0FC2C07564500AE51ED /* Video.swift in Sources */,
 				04D1B0E72C07409400AE51ED /* Image.swift in Sources */,
+				C9D179C92C12C0D7009C24AF /* UIView+Extension.swift in Sources */,
 				04D1B0912C0714E500AE51ED /* TabbarViewController.swift in Sources */,
 				04D1B0F62C07562A00AE51ED /* Picture.swift in Sources */,
 				04D1B0D42C0729AB00AE51ED /* PersonalViewModel.swift in Sources */,
@@ -571,6 +620,7 @@
 				04D1B0DA2C072BB600AE51ED /* PhotoRepository.swift in Sources */,
 				04D1B0892C0714AD00AE51ED /* AppViewModel.swift in Sources */,
 				04D1B0C82C07253D00AE51ED /* VideoNavigator.swift in Sources */,
+				C9D179D82C12E8C3009C24AF /* PopupViewController.swift in Sources */,
 				04D1B0A92C0724A000AE51ED /* VideoViewController.swift in Sources */,
 				04D1B0E02C072BD500AE51ED /* APIUrls.swift in Sources */,
 				04D1B0F32C07481200AE51ED /* ImageCell.swift in Sources */,
@@ -579,6 +629,7 @@
 				04D1B0972C07151000AE51ED /* TabbarNavigator.swift in Sources */,
 				04D1B09D2C0716E500AE51ED /* Bindable.swift in Sources */,
 				04D1B0C02C07250700AE51ED /* VideoUseCase.swift in Sources */,
+				C9D179D32C12DB69009C24AF /* PhotoCell.swift in Sources */,
 				04D1B0E92C07409C00AE51ED /* Images.swift in Sources */,
 				04D1B0932C0714FA00AE51ED /* TabbarViewModel.swift in Sources */,
 				04D1B0C62C07253000AE51ED /* DetailUseCase.swift in Sources */,
@@ -591,6 +642,7 @@
 				04D1B0AD2C0724AC00AE51ED /* SearchViewController.swift in Sources */,
 				04D1B0792C07137E00AE51ED /* PhotoViewController.swift in Sources */,
 				04D1B05E2C07121F00AE51ED /* WallPaperRx.xcdatamodeld in Sources */,
+				C9D179CE2C12C766009C24AF /* VideoCell.swift in Sources */,
 				04D1B0562C07121F00AE51ED /* SceneDelegate.swift in Sources */,
 				04D1B0A12C0716F900AE51ED /* ErrorTracker.swift in Sources */,
 				04D1B08D2C0714C700AE51ED /* AppUseCase.swift in Sources */,

@@ -28,16 +28,23 @@ extension PhotoViewModel: ViewModelType {
     func transform(_ input: Input, disposeBag: DisposeBag) -> Output {
         
         let photos = input.loadTrigger
+            .do(onNext: {
+                print("loadTrigger received")
+            })
             .flatMapLatest {
                 self.useCase.getCurated()
                     .asDriverOnErrorJustComplete()
             }
+            .do(onNext: { photos in
+                   print("Photos received: \(photos.count) items")
+               })
         
         input.selectedTrigger
             .withLatestFrom(photos) { indexPath, photos in
                 return photos[indexPath.row]
             }
             .do(onNext: { photo in
+                print("Photo selected: \(photo)")
                 self.navigator.toDetail(photo)
             })
             .drive()

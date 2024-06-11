@@ -39,6 +39,11 @@ class APIService: APIServiceType {
     
     // MARK: - Functions
     func request(_ target: APITarget) -> Single<Response> {
+        print("Request URL: \(target.baseURL)\(target.path)")
+        print("Request Method: \(target.method.rawValue)")
+        print("Request Headers: \(target.headers ?? [:])")
+        print("Request Task: \(target.task)")
+        
         let request = Single<Void>.just(())
             .do(onSuccess: { response in
                 print("[LOG 🌏][\(target.method.rawValue)] Request \(target.baseURL.absoluteString + target.path)")
@@ -46,6 +51,11 @@ class APIService: APIServiceType {
             .flatMap { [unowned self] _ -> Single<Response> in
                 return self.provider.rx.request(target)
             }
+            .do(onSuccess: { response in
+                print("[LOG 🌏][\(target.method.rawValue)] Response: \(response)")
+            }, onError: { error in
+                print("[LOG 🌏][\(target.method.rawValue)] Error: \(error)")
+            })
             .catchApiError()
         return request
     }
@@ -64,6 +74,9 @@ extension PrimitiveSequence where Trait == SingleTrait, Element == Response {
                 let domain = response.request?.url?.absoluteString ?? ""
                 let code = response.statusCode
                 let errorMessage = HTTPURLResponse.localizedString(forStatusCode: response.statusCode)
+                if let responseBody = try? response.mapString() {
+                    print("Response Body: \(responseBody)")
+                }
                 throw NSError(domain: domain,
                               code: code,
                               userInfo: [NSLocalizedDescriptionKey: errorMessage])

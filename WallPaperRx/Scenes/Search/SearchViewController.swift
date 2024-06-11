@@ -11,6 +11,10 @@ import RxCocoa
 
 final class SearchViewController: UIViewController, Bindable {
     
+    @IBOutlet private weak var searchBar: UISearchBar!
+    @IBOutlet private weak var noResultLabel: UILabel!
+    @IBOutlet private weak var collectionView: UICollectionView!
+    
     var viewModel: SearchViewModel!
     var disposeBag = DisposeBag()
 

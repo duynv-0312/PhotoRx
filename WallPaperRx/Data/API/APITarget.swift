@@ -69,14 +69,8 @@ extension APITarget: TargetType {
             return [
                 "Content-type": "application/json",
                 "Accept": "application/json",
-                "Authorization": APIUrls.shared.baseUrl
+                "Authorization": APIUrls.shared.key
             ]
         }
-    }
-}
-
-struct GetDataFromPlist {
-    static func getStringValue(forKey key: String) -> String {
-        return "Cc2m6hWwnFc1qktRHIx72yTu6rF5DjlRLhbgdf6QisKEDU4DUX5MiTjs"
     }
 }
